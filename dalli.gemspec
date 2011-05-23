@@ -3,13 +3,13 @@ $:.unshift lib unless $:.include?(lib)
 require 'dalli/version'
 
 Gem::Specification.new do |s|
-  s.name = %q{dalli}
+  s.name = %q{sayso-dalli}
   s.version = Dalli::VERSION
 
-  s.authors = ["Mike Perham"]
+  s.authors = ["SaySo"]
   s.date = Time.now.utc.strftime("%Y-%m-%d")
-  s.description = %q{High performance memcached client for Ruby}
-  s.email = %q{mperham@gmail.com}
+  s.description = %q{High performance memcached client for Ruby - forked and gemified for sayso}
+  s.email = %q{sayso@truvolabs.com}
   s.files = Dir.glob("lib/**/*") + [
      "LICENSE",
      "README.md",
@@ -20,10 +20,10 @@ Gem::Specification.new do |s|
      "Performance.md",
      "Upgrade.md",
   ]
-  s.homepage = %q{http://github.com/mperham/dalli}
+  s.homepage = %q{http://github.com/sayso/dalli}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.summary = %q{High performance memcached client for Ruby}
+  s.summary = %q{High performance memcached client for Ruby - forked and gemified for sayso}
   s.test_files = Dir.glob("test/**/*")
   s.add_development_dependency(%q<shoulda>, [">= 0"])
   s.add_development_dependency(%q<mocha>, [">= 0"])
